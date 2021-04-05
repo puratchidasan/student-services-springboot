@@ -1,0 +1,45 @@
+<f:view xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<h:head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>TO-DO application</title>
+	</h:head>
+	<h:body>
+		<div style="color: green">
+			<p>Welcome in the TO-DO application!</p>
+			<p style="height: 50px">
+				This is a static message rendered from xhtml. <A
+					href="./students/Student1/courses#">Student 1 -Courses</A>
+			</p>
+			<h:form>
+
+				<h:outputLabel id="name" value="#{jsfService.name}" />
+				<br />
+				<h:outputLabel id="email" value="#{jsfService.emailId}" />
+				<br />
+				<h:outputLabel id="message" value="#{jsfService.message}" />
+				<A href="./index.jsf">Back to home</A>
+				<br/>
+				<h:dataTable value="#{courseService.students}" var="employee"
+					styleClass="employeeTable" headerClass="employeeTableHeader"
+					rowClasses="employeeTableOddRow,employeeTableEvenRow" border="2" cellspacing="2">
+					<h:column><f:facet name="header">ID</f:facet>#{employee.id}</h:column>
+					<h:column><f:facet name="header">Name</f:facet>#{employee.name}</h:column>
+					<h:column><f:facet name="header">Description</f:facet>#{employee.description}</h:column>					
+					<h:column><f:facet name="header">Courses</f:facet>
+						<h:dataTable value="#{courseService.courses}" var="employee"
+					styleClass="employeeTable" headerClass="employeeTableHeader"
+					rowClasses="employeeTableOddRow,employeeTableEvenRow" border="2" cellspacing="2">
+					<h:column><f:facet name="header">ID</f:facet>#{employee.id}</h:column>
+					<h:column><f:facet name="header">Name</f:facet>#{employee.name}</h:column>
+					<h:column><f:facet name="header">Description</f:facet>#{employee.description}</h:column>
+					
+				</h:dataTable></h:column>
+				</h:dataTable>
+				
+			</h:form>
+		</div>
+	</h:body>
+</f:view>
