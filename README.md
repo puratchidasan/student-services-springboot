@@ -1,4 +1,9 @@
-Testing by Dasan
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/dashboard?id=report_springboot)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=report_springboot&metric=bugs)](https://sonarcloud.io/dashboard?id=report_springboot)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=report_springboot&metric=coverage)](https://sonarcloud.io/dashboard?id=report_springboot)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=report_springboot&metric=ncloc)](https://sonarcloud.io/dashboard?id=report_springboot)
+
 <!---
 Current Directory : /in28Minutes/git/spring-boot-examples/spring-boot-rest-services-with-unit-and-integration-tests
 -->
