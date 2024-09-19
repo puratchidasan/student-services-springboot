@@ -16,6 +16,6 @@ public class BaeldungController {
 
     @PostMapping("/baeldung")
     public String sayHelloPost(HttpServletResponse response) {
-        return "hello";
+        return "hello World";
     }
 }
